@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  name: Provision
+  become: yes
+  roles:
+  - nginx
