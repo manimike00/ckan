@@ -1,5 +1,5 @@
 ---
 - name: Ensure Nginx is at the latest version
-  yum:
+  apt:
       name: nginx
       state: latest
