@@ -13,7 +13,7 @@ pipeline {
                                     execCommand: "ip a"
                                 ),
                                 sshTransfer(
-                                    execCommand: "logged succesfully"
+                                    execCommand: "echo 'logged succesfully'"
                                 )
                             ])
                         ])
