@@ -3,4 +3,5 @@
   name: Provision
   become: yes
   roles:
+  - common
   - nginx
