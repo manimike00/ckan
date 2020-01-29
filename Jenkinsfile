@@ -10,7 +10,7 @@ pipeline {
                                 configName: "ckan",
                                 transfers: [
                                 sshTransfer(
-                                    execCommand: "ip a"
+                                    execCommand: "cd ~/ckan && git pull origin develop && ansible-playbook playbook.yml"
                                 ),
                                 sshTransfer(
                                     execCommand: "echo 'logged succesfully'"
