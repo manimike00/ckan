@@ -3,20 +3,30 @@
   file: 
     path: /home/ubuntu/ckandeploy/lib
     state: directory
+
 - name: Create a symbolic link 1
   become: yes
   file:
     src: /home/ubuntu/ckandeploy/lib
     dest: /usr/lib/ckan
     state: link
+
 - name: ckan_home2
   file: 
     path: /home/ubuntu/ckandeploy/etc
     state: directory
+
 - name: Create a symbolic link 2
   become: yes
   file:
     src: /home/ubuntu/ckandeploy/etc
     dest: /etc/ckan
     state: link
-     
+
+- name: Create Python vENV
+  become: yes
+  file:
+    path: /usr/lib/ckan/default
+    state: directory
+    owner: $(whoami)
+    group: $(whoami)
