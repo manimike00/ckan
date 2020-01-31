@@ -23,10 +23,12 @@
     dest: /etc/ckan
     state: link
 
-- name: Create Python vENV
+- name: Create Directory
   become: yes
   file:
     path: /usr/lib/ckan/default
     state: directory
-    owner: $(whoami)
-    group: $(whoami)
+    
+- name: Create Python vENV
+  command: 
+    cmd: virtualenv --no-site-packages /usr/lib/ckan/default
