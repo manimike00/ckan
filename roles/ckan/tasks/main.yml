@@ -32,3 +32,8 @@
 - name: Create Python vENV
   command: 
     cmd: virtualenv --no-site-packages /usr/lib/ckan/default
+
+- name: Download PIP dependencies
+  pip:
+    name: setuptools==20.4
+    virtualenv: /usr/lib/ckan/default
