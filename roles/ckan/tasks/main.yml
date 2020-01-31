@@ -1,5 +1,6 @@
 ---
-- name: Creates directory
-  file:
-    path: ~/demo/lib
-    state: directory
+- name: test
+      file: path=/tmp/{{item.0}}/{{item.1}} state=directory
+      with_nested:
+        - ['test1', 'test2']
+        - ['bin', 'conf']
