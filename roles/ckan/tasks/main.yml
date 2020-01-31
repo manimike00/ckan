@@ -1,5 +1,5 @@
 ---
 - name: Creates directory
   file:
-    path: ~/ckan/lib
+    path: ~/demo/lib
     state: directory
