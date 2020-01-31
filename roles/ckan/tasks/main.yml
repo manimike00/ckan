@@ -1,6 +1,5 @@
 ---
 - name: test
-  become: yes
   file: 
     path: /tmp/dir/dir2 
     state: directory
