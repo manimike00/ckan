@@ -8,3 +8,4 @@
   - libpq-dev
   - python-pip 
   - python-virtualenv
+  - git-core
