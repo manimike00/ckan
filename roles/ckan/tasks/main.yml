@@ -1,0 +1,5 @@
+---
+- name: Creates directory
+  file:
+    path: ~/ckan/lib
+    state: directory
