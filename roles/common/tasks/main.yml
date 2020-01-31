@@ -5,3 +5,6 @@
   with_items:
   - python-dev
   - postgresql
+  - libpq-dev
+  - python-pip 
+  - python-virtualenv
