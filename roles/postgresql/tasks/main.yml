@@ -1,0 +1,4 @@
+- name: Create User in PostgreSQL
+  postgresql_user:
+    name: ckan_default
+    state: present
