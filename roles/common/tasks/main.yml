@@ -10,3 +10,4 @@
   - python-virtualenv
   - git-core
   - solr-jetty
+  - openjdk-8-jdk
