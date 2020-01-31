@@ -1,5 +1,7 @@
 ---
 - name: test
-      file: 
-        path: /tmp/{{item.0}}/{{item.1}} state=directory
+  become: yes
+  file: 
+    path: /tmp/dir/dir2 
+    state: directory
      
