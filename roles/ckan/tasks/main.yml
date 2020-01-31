@@ -1,22 +1,22 @@
 ---
 - name: ckan_home1
   file: 
-    path: $HOME/ckandeploy/lib
+    path: /home/ubuntu/ckandeploy/lib
     state: directory
 - name: Create a symbolic link 1
   become: yes
   file:
-    src: $HOME/ckandeploy/lib
+    src: /home/ubuntu/ckandeploy/lib
     dest: /usr/lib/ckan
     state: link
 - name: ckan_home2
   file: 
-    path: $HOME/ckandeploy/etc
+    path: /home/ubuntu/ckandeploy/etc
     state: directory
 - name: Create a symbolic link 2
-become: yes
+  become: yes
   file:
-    src: $HOME/ckandeploy/etc
+    src: /home/ubuntu/ckandeploy/etc
     dest: /etc/ckan
     state: link
      
